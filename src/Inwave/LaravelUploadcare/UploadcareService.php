@@ -1,4 +1,6 @@
-<?php namespace Inwave\LaravelUploadcare;
+<?php 
+
+namespace Inwave\LaravelUploadcare;
 
 use \Uploadcare\Api as Api;
 

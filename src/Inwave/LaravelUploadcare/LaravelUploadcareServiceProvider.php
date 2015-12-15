@@ -1,6 +1,10 @@
-<?php namespace Altitude\LaravelUploadcare;
+<?php 
+
+namespace Inwave\LaravelUploadcare;
 
 use Illuminate\Support\ServiceProvider;
+use Collective\Html\FormFacade as Form;
+use Collective\Html\HtmlServiceProvider;
 use \Config;
 use \Uploadcare;
 
@@ -18,16 +22,17 @@ class LaravelUploadcareServiceProvider extends ServiceProvider {
 	* @return void
 	*/
 	public function boot()
-	{
-		$this->app['form']->macro('uploadcare', function($name, $value=null, $options=array()){
+	{	
+		Form::macro('uploadcare', function($name, $value=null, $options=array()){
+		            
+					$options = array_merge($options, array(
+									'role'  => 'uploadcare-uploader',
+									'value' => $value,
+								));
 			
-			$options = array_merge($options, array(
-				'role'  => 'uploadcare-uploader',
-				'value' => $value,
-			));
-			
-			return $this->app['form']->input('hidden', $name, $value, $options);
-		});
+		            return Form::input('hidden', $name, $value, $options);
+		        });
+		
 	}
 
 	/**

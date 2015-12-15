@@ -1,4 +1,6 @@
-<?php namespace Altitude\LaravelUploadcare\Facades;
+<?php 
+
+namespace Inwave\LaravelUploadcare\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
