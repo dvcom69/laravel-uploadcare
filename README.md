@@ -1,6 +1,9 @@
 # Uploadcare for Laravel
 
 This is a simple Laravel service provider for Uploadcare's [official PHP library.](https://github.com/uploadcare/uploadcare-php)
+It is a fork from altitude/laravel-uploadcare and the pull request from dimaninc to make it compatible with Laravel 5. 
+
+My added value is to make it a onclick install again. All copywrites are with the mentioned owners. 
 
 ## Installation
 
@@ -8,7 +11,7 @@ First, add this to your `composer.json` file
 
 ```js
 "require": {
-    "illuminate/html": "5.*",
+    "laravelcollective/html": "5.1.*",
     "altitude/laravel-uploadcare": "~1.2"
 }
 ```
@@ -24,6 +27,8 @@ return array(
 );
 ```
 
+Best practice would be to put the keys in your .ENV file.
+
 Finally, add the service provider and alias in your `config/app.php`
 
 ```php
@@ -31,7 +36,7 @@ Finally, add the service provider and alias in your `config/app.php`
     ...
 
     Illuminate\Html\HtmlServiceProvider::class,
-    Altitude\LaravelUploadcare\LaravelUploadcareServiceProvider::class,
+    Inwave\LaravelUploadcare\LaravelUploadcareServiceProvider::class,
 );
 
 'aliases' => array(
@@ -39,7 +44,7 @@ Finally, add the service provider and alias in your `config/app.php`
 
     'Form' => Illuminate\Html\FormFacade::class,
     'HTML' => Illuminate\Html\HtmlFacade::class,
-    'Uploadcare' => Altitude\LaravelUploadcare\Facades\Uploadcare::class,
+    'Uploadcare' => Inwave\LaravelUploadcare\Facades\Uploadcare::class,
 );
 ```
 
