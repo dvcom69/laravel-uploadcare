@@ -12,7 +12,7 @@ First, add this to your `composer.json` file
 ```js
 "require": {
     "laravelcollective/html": "5.1.*",
-    "altitude/laravel-uploadcare": "~1.2"
+    "inwave/laravel-uploadcare": "~1.2"
 }
 ```
 
