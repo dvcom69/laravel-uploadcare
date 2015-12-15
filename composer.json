@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Altitude\\LaravelUploadcare": "src/"
+            "Inwave\\LaravelUploadcare": "src/"
         }
     },
     "minimum-stability": "stable"
