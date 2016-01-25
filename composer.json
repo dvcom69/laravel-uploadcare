@@ -1,6 +1,6 @@
 {
     "name": "inwave/laravel-uploadcare",
-    "description": "Laravel Service for Uploadcare",
+    "description": "Laravel Serviceprovider for Uploadcare",
     "keywords": ["laravel", "uploadcare"],
     "homepage":"https://github.com/InWave/laravel-uploadcare.git",
     "license": "MIT",
