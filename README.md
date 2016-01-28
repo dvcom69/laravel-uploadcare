@@ -3,7 +3,7 @@
 This is a simple Laravel service provider for Uploadcare's [official PHP library.](https://github.com/uploadcare/uploadcare-php)
 It is a fork from altitude/laravel-uploadcare and the pull request from dimaninc to make it compatible with Laravel 5. 
 
-My added value is to make it a onclick install again. All copywrites are with the mentioned owners. 
+My added value is to make it a onclick install again. All copyrights are with the mentioned owners. 
 
 ## Installation
 
