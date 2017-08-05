@@ -1,11 +1,31 @@
 # Uploadcare for Laravel
 
 This is a simple Laravel service provider for Uploadcare's [official PHP library.](https://github.com/uploadcare/uploadcare-php)
-It is a fork from altitude/laravel-uploadcare and the pull request from dimaninc to make it compatible with Laravel 5. 
+It is a fork from altitude/laravel-uploadcare and the pull request from dimaninc to make it compatible with Laravel 5. This package is now maintained by me. 
 
-My added value is to make it a onclick install again. All copyrights are with the mentioned owners. 
+## Installation after laravel 5.5
 
-## Installation
+1. install package by composer:
+```js
+composer require inwave/laravel-uploadcare
+
+```
+
+This package will auto discover itself, therefore there is no need to add files to the app.php. Further more it will also autodiscover it's dependencies. 
+
+2. Publish the config file:
+```js
+php artisan vendor:publish
+```
+
+3. Add the required config variables in the .env file:
+```js
+UPLOADCARE_PUBLIC_KEY=
+UPLOADCARE_PRIVATE_KEY=
+```
+
+
+## Installation pre laravel 5.5
 
 First, add this to your `composer.json` file
 
@@ -22,7 +42,7 @@ Then, create `config/uploadcare.php` with the following
 <?php
 
 return array(
-    'public_key'  => 'YOUR_UPLOADCARE_PUBLIC_KEY_HERE',
+    'public_key'  => 'YOUR_UPLO ADCARE_PUBLIC_KEY_HERE',
     'private_key' => 'YOUR_UPLOADCARE_PRIVATE_KEY_HERE',
 );
 ```

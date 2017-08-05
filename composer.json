@@ -29,5 +29,18 @@
             "Inwave\\LaravelUploadcare": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Illuminate\\Html\\HtmlServiceProvider",
+                "Inwave\\LaravelUploadcare\\LaravelUploadcareServiceProvider"
+            ],
+            "aliases": {
+                "form": "Illuminate\\Html\\FormFacade",
+                "HTML": "Illuminate\\Html\\HtmlFacade",
+                "Uploadcare": "Inwave\\LaravelUploadcare\\Facades\\Uploadcare"
+            }
+        }
+    }
 }
