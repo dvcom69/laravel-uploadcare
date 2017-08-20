@@ -6,9 +6,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Clément Salaün",
-            "email": "clem@32b6.com",
-            "homepage": "http://32b6.com",
+            "name": "Kevin Overtoom",
+            "email": "kevin@inwave.nl",
+            "homepage": "http://www.inwave.nl",
             "role": "Developer"
         }
     ],
@@ -19,9 +19,9 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "laravel/framework": ">=5.1.0",
-        "laravelcollective/html": ">=5.1.0",
+        "php": ">=7.0.0",
+        "laravel/framework": ">=5.5.0",
+        "laravelcollective/html": ">=5.5.0",
         "uploadcare/uploadcare-php": ">=v1.1.0"
     },
     "autoload": {
@@ -33,12 +33,9 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Illuminate\\Html\\HtmlServiceProvider",
                 "Inwave\\LaravelUploadcare\\LaravelUploadcareServiceProvider"
             ],
             "aliases": {
-                "form": "Illuminate\\Html\\FormFacade",
-                "HTML": "Illuminate\\Html\\HtmlFacade",
                 "Uploadcare": "Inwave\\LaravelUploadcare\\Facades\\Uploadcare"
             }
         }
