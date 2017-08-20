@@ -3,8 +3,8 @@
 namespace Inwave\LaravelUploadcare;
 
 use Collective\Html\FormFacade as Form;
+use Illuminate\Support\Facades\config;
 use Illuminate\Support\ServiceProvider;
-use \Config;
 
 class LaravelUploadcareServiceProvider extends ServiceProvider
 {
