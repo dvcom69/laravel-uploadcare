@@ -45,9 +45,9 @@ class LaravelUploadcareServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(
-            __DIR__ . '/../config/uploadcare.php', 'inwave-laravel-uploadcare-uploadcare'
-        );
+
+        $configPath = __DIR__ . '/../config/uploadcare.php';
+        $this->mergeConfigFrom($configPath, 'Inwave-laravel-uploadcare');
 
         $this->app->singleton('uploadcare', function () {
 
