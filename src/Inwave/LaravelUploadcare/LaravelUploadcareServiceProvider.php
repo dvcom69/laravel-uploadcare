@@ -22,8 +22,9 @@ class LaravelUploadcareServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $configPath = __DIR__ . '/../config/uploadcare.php';
         $this->publishes([
-            __DIR__ . '/config' => config_path('inwave-laraveluploadcare'),
+            $configPath => config_path('uploadcare.php'),
         ]);
 
         Form::macro('uploadcare', function ($name, $value = null, $options = array()) {
@@ -45,9 +46,8 @@ class LaravelUploadcareServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
         $configPath = __DIR__ . '/../config/uploadcare.php';
-        $this->mergeConfigFrom($configPath, 'Inwave-laravel-uploadcare');
+        $this->mergeConfigFrom($configPath, 'uploadcare');
 
         $this->app->singleton('uploadcare', function () {
 
