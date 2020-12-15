@@ -22,7 +22,7 @@
         "php": ">=7.0.0",
         "laravel/framework": ">=5.5.0",
         "laravelcollective/html": ">=5.5.0",
-        "uploadcare/uploadcare-php": "=v2.3.0"
+        "uploadcare/uploadcare-php": "v2.3.0"
     },
     "autoload": {
         "psr-0": {
